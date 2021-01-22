@@ -21,7 +21,7 @@ namespace ToggleSystem.Tests.Editor
         [Test]
         public void CollectiveToggleSetsObjectsToTrue()
         {
-            _controller.ObjCollider = _actualCollider;
+            _controller.ColliderComponent = _actualCollider;
 
             BaseToggleable[] toggleObjects = {_controller};
             
@@ -33,7 +33,7 @@ namespace ToggleSystem.Tests.Editor
         [Test]
         public void CollectiveToggleSetsObjectsToFalse()
         {
-            _controller.ObjCollider = _actualCollider;
+            _controller.ColliderComponent = _actualCollider;
 
             BaseToggleable[] toggleObjects = {_controller};
             

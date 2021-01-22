@@ -5,9 +5,9 @@ namespace ToggleSystem.Scripts.Core
 {
     public class ColliderToggle<T> : IToggle<T> where T : Collider
     {
-        public void Toggle(T component, bool isEnabled)
+        public void Toggle(T collider, bool isEnabled)
         {
-            component.enabled = isEnabled;
+            collider.enabled = isEnabled;
         }
     }
 }

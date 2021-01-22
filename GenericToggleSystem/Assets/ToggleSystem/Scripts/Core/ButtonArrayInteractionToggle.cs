@@ -7,7 +7,7 @@ namespace ToggleSystem.Scripts.Core
     {
         public void Toggle(Button[] button, bool isEnabled)
         {
-            for (int i = 0; i < button.Length; i++)
+            for (var i = 0; i < button.Length; i++)
             {
                 button[i].interactable = isEnabled;
             }
