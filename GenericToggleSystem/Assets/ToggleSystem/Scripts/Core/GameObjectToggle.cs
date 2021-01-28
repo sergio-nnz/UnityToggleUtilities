@@ -5,9 +5,9 @@ namespace ToggleSystem.Scripts.Core
 {
     public class GameObjectToggle : IToggle<GameObject>
     {
-        public void Toggle(GameObject button, bool isEnabled)
+        public void Toggle(GameObject gameObject, bool isEnabled)
         {
-            button.SetActive(isEnabled);
+            gameObject.SetActive(isEnabled);
         }
     }
 }

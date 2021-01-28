@@ -2,6 +2,6 @@
 {
     public interface IToggle<T>
     {
-        void Toggle(T button, bool isEnabled);
+        void Toggle(T component, bool isEnabled);
     }
 }
