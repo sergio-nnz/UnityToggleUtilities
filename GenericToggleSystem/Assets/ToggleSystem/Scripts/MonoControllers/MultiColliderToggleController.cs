@@ -15,6 +15,18 @@ namespace ToggleSystem.Scripts.MonoControllers
             set => colliderComponent = value;
         }
 
+        [ContextMenu("EnableColliders")]
+        public void EnableColliders()
+        {
+            Toggle(true);
+        }
+        
+        [ContextMenu("DisableColliders")]
+        public void DisableColliders()
+        {
+            Toggle(true);
+        }
+
         public override void Toggle(bool isEnabled)
         {
             for (var i = 0; i < colliderComponent.Length; i++)

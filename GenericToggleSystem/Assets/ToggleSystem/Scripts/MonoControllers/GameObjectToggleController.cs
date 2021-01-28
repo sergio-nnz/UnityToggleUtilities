@@ -9,6 +9,19 @@ namespace ToggleSystem.Scripts.MonoControllers
         [SerializeField] private GameObject _gameObject;
         private readonly IToggle<GameObject> _toggle = new GameObjectToggle();
 
+
+        [ContextMenu("EnableColliders")]
+        public void EnableColliders()
+        {
+            Toggle(true);
+        }
+        
+        [ContextMenu("DisableColliders")]
+        public void DisableColliders()
+        {
+            Toggle(true);
+        }
+
         public override void Toggle(bool isEnabled)
         {
             _toggle.Toggle(_gameObject, isEnabled);
